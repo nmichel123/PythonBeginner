@@ -11,24 +11,25 @@ player = False
 
 while player == False:
 #set player to True
-    player = input('Rock, Paper, Scissors?')
+#\n is regex code for new line for formatting in terminal
+    player = input('\nRock, Paper, Scissors?')
     if player == computer:
         print('Tie!')
     elif player == 'Rock': 
         if computer == 'Paper':
-            print('Loser!', computer, 'covers', player)
+            print('\nLoser!', computer, 'covers', player)
         else:
-            print('Winner!', player, 'smashes', computer)
+            print('\nWinner!', player, 'smashes', computer)
     elif player == 'Paper':
         if computer == 'Scissors':
-            print('Loser!', computer, 'slashes', player)
+            print('\nLoser!', computer, 'slashes', player)
         else:
-            print('Winner!', player, 'covers', computer)
+            print('\nWinner!', player, 'covers', computer)
     elif player == 'Scissors':
         if computer == 'Rock':
-            print('Loser!', computer, 'smashes', player)
+            print('\nLoser!', computer, 'smashes', player)
         else:
-            print('Winner!', player, 'slashes', computer)
+            print('\nWinner!', player, 'slashes', computer)
         #player was set to True, but we want it to be False so the loop continues
             player = False
             computer = t[randint(0,2)]
