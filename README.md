@@ -7,3 +7,7 @@ A command line rock, paper scissors game. Prompts user for choice & program resp
 
 ### Random Password Generator
 A command line random password generator. Prompts user for length of password choice & returns a random password using letters, numbers & special characters. 
+
+### Wikipedia Scraper
+
+### Tic Tac Toe
