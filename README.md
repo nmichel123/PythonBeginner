@@ -11,3 +11,4 @@ A command line random password generator. Prompts user for length of password ch
 ### Wikipedia Scraper
 
 ### Tic Tac Toe
+2 Player command line version of Tic Tac Toe. Asks users to choose a location mapped to the grid and places the X or O in the location chosen. Game will respond with a game over/win/loss message when they requirements of the game are fulfilled. Option to restart the game at the end. 
