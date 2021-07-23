@@ -47,42 +47,42 @@ def game():
             if board['1'] == board['2'] == board['3'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['4'] == board['5'] == board['6'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['7'] == board['8'] == board['9'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['1'] == board['4'] == board['7'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['2'] == board['5'] == board['8'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['3'] == board['6'] == board['9'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['1'] == board['5'] == board['9'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
             elif board['3'] == board['5'] == board['7'] != '':
                 printBoard(board)
                 print("\nGame Over.\n")
-                print(' ***** ' + turn + " won. *****")
+                print(' ***** ' + turn + " won. *****\n")
                 break
         
         #If neither X or O wins the board 
@@ -97,12 +97,12 @@ def game():
             turn = 'X'
         
 #Now we ask if the player wants to restart
-restart = input('Do you want to play again?(y/n)')
-if restart == 'y' or restart == 'Y':
-    for space in boardSpaces:
-        board[space] = ''
+    restart = input('Do you want to play again?(y/n)')
+    if restart == 'y' or restart == 'Y':
+        for space in boardSpaces:
+            board[space] = ''
 
-        game()
+            game()
 
 if __name__ == "__main__":
     game()
